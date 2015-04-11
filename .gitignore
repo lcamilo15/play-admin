@@ -2,6 +2,8 @@
 bin/
 /db
 .eclipse
+.idea
+.settings
 /lib/
 /logs/
 /modules
