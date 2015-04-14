@@ -1,6 +1,23 @@
 @(message: String)
 
 @main("Welcome to Play") {
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+        <ul class="nav navbar-nav">
+            <li ng-class="{active: $state.includes('module2')}"><a href="#/account">Account</a></li>
+        </ul>
+    </div>
+    <div class="container text-center">
+        <h3> Open your browser's debugger tools. </h3>
+    </div>
+    <div class="container">
+         <div class="col-sm-6">
+             <div class="content" ui-view>
+                    <!-- State views load here -->
+                <small>States' views will load here.</small>
+            </div>
+        </div>
+    </div>
+    <!---
     <div class="container">
         <div class="row">
             <div class="login-box col-sm-6 col-sm-offset-3">
@@ -38,9 +55,8 @@
                     </div>
                 </div>
             </div>
-        </div><!--/row-->
+        </div><! --/row - - >
     </div>
-    <!---
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">

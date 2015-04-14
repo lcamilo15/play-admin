@@ -1,0 +1,8 @@
+[
+  {
+    "stateName": "account",
+    "urlPrefix": "/account",
+    "type": "ngload",
+    "src": "app/module/account/module"
+  }
+]

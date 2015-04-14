@@ -24,7 +24,8 @@ libraryDependencies ++= Seq(
   "org.webjars" % "ui-router-extras" % "0.0.13",
   "org.webjars" % "bootswatch-paper" % "3.3.1+2",
   "org.webjars" % "angular-schema-form" % "0.7.3-1",
-  "org.webjars" % "bootstrap" % "3.1.1-1"
+  "org.webjars" % "bootstrap" % "3.1.1-1",
+  "org.webjars" % "requirejs-text" % "2.0.10-3"
 )
 
 LessKeys.compress in Assets := true
