@@ -1,6 +1,46 @@
 @(message: String)
 
 @main("Welcome to Play") {
+    <div class="container">
+        <div class="row">
+            <div class="login-box col-sm-6 col-sm-offset-3">
+
+                <div class="panel">
+                    <div class="panel-body">
+                        <p class="pv text-bold">LOGIN CREDENTIALS</p>
+                        <form role="form" class="mb-lg ng-pristine ng-valid">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group has-feedback mb">
+                                        <input id="exampleInputEmail1" type="email" placeholder="Your email" autocomplete="off" class="form-control">
+                                        <span class="fa fa-envelope form-control-feedback text-muted"></span>
+                                    </div>
+                                    <br>
+                                    <div class="form-group has-feedback">
+                                        <input id="exampleInputPassword1" type="password" placeholder="Your password" class="form-control">
+                                        <span class="fa fa-lock form-control-feedback text-muted"></span>
+                                    </div>
+                                    <div class="checkbox c-checkbox pull-left mt0">
+                                        <label>
+                                            <input type="checkbox" value="">
+                                            <span class="fa fa-check"></span>Remember me</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <button type="submit" class="btn btn-block btn-primary mb">Login</button>
+                                    <p class="text-muted mb0">Don't have an account yet?</p>
+                                    <a ui-sref="page.register" class="btn btn-block btn-default" href="#/page/register">
+                                        <strong>Register one</strong>
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div><!--/row-->
+    </div>
+    <!---
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -29,4 +69,5 @@
             </div>
         </div>
     </div>
+    --->
 }

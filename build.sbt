@@ -29,9 +29,9 @@ libraryDependencies ++= Seq(
 
 LessKeys.compress in Assets := true
 
-//pipelineStages := Seq(rjs, uglify, digest, gzip)
+pipelineStages := Seq(rjs, uglify, digest, gzip)
 
-pipelineStages := Seq(digest, gzip)
+includeFilter in uglify := GlobFilter("javascript/*.js")
 
 includeFilter in (Assets, LessKeys.less) := "*.less"
 
