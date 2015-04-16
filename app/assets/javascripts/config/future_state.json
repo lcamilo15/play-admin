@@ -4,5 +4,17 @@
     "urlPrefix": "/account",
     "type": "ngload",
     "src": "app/module/account/module"
+  },
+  {
+    "stateName": "credential",
+    "urlPrefix": "/credential",
+    "type": "ngload",
+    "src": "app/module/credential/module"
+  },
+  {
+    "stateName": "registration",
+    "urlPrefix": "/registration",
+    "type": "ngload",
+    "src": "app/module/registration/module"
   }
 ]
